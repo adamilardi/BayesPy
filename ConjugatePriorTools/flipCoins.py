@@ -1,14 +1,13 @@
 #!/usr/bin/python
 
 import sys
-import csv
-import math
 import random
 
 alpha = float(sys.argv[1])
 beta = float(sys.argv[2])
+n = float(sys.argv[3])
 
-for i in range(0, 1500):
+for i in range(0, int(n)):
 	p = random.betavariate(alpha, beta)
 	heads = 0
 	tails = 0
